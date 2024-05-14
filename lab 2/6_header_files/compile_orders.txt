@@ -1,0 +1,10 @@
+#Aparaitito na dinetai ston compiler kai to arxeio .c me tin ylopoiisi twn synartisewn.
+gcc -Wall -o swap my_functions.c mainSwap.c
+#kai
+gcc -Wall -o printer my_functions.c mainArray.c
+#to arxeio .h ginetai include, den to pername kai ston compiler
+
+#Ektelesi programmatos:
+./swap
+#kai
+./printer

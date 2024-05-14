@@ -1,0 +1,33 @@
+﻿_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ Χ Ρ Η Σ Η   G C C_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  
+  -------
+  man gcc
+  -------
+
+  ----------
+  man printf
+  ----------
+  
+  --------------------
+  gcc hello.c -o hello 
+  --------------------
+Compiles hello.C into an executable program named "hello".
+Run by typing 'hello' at the command line.
+
+  ----------------------------
+  gcc -Wall myprog.c -o myprog
+  ----------------------------
+Δε "καταπιέζει" καμία προειδοποίηση για πιθανά λάθη: Wall => all warnings.
+
+  -----------------------------
+  gcc file1.c file2.c -o myprog 
+  -----------------------------
+  gcc -c file1.C
+  gcc -c file2.C
+  gcc file1.o file2.o -o myprog 
+  -----------------------------
+Εναλλακτικοί τρόποι μεταγλώττισης πολλαπλών αρχείων κώδικα C.
+
+Περισσότερα online: http://pages.cs.wisc.edu/~beechung/ref/gcc-intro.html
+
