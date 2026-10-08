@@ -1,0 +1,121 @@
+body {
+	background-color: white;
+}
+
+p {
+  color: black;
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  padding-left: 5px;
+  margin-right: 30px;
+}
+
+h1 {
+	color:blue; 
+	font-family:"Calibri", sans-serif;
+	
+}
+h2 {
+	font: italic 20px;
+	color:rgb(0, 0, 255);
+  font-family:"Calibri", sans-serif;
+}
+a:link {
+	color:rgb(0, 68, 255)
+}
+a:visited {
+	color:rgb(78, 24, 204)
+}
+
+div {
+  margin-left: 200px;
+  padding-left: 5px;
+}
+
+header {
+  background-color: rgba(0, 183, 255, 0.418);
+  padding: 3px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: "Calibri", sans-serif;
+    
+}
+
+table {
+	color: black;
+	font-family: "Calibri", sans-serif;
+	font-size:16px;
+}
+th {
+  border-bottom: 1px solid blue;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+} 
+td {
+  border-bottom: 1px solid orange;
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+li{
+  color: black;
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+}
+
+li a{
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+}
+
+img {
+  padding: 10px;
+}
+
+nav {
+  background-color: rgb(130, 247, 255);
+  float: left;
+  display: block;
+  font-family: "Calibri", sans-serif;
+	font-size: 18px;
+  margin: 5px;
+  padding: 10px;
+  width: 150px;
+  height: 300px;
+}
+
+
+nav a{
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 255);
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+nav a:hover
+{
+  background: rgb(15, 167, 255);
+  color: white;
+}
+
+nav a:visited
+{
+  color: rgb(0, 68, 255);
+}
+
+footer 
+{
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(0, 183, 255, 0.418);
+  color: white;
+  display:block;
+  margin-top: 100px;
+}
+
