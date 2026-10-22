@@ -1,0 +1,61 @@
+για τον server
+Εγκαθιστώ:
+VS Code για αρχεία/κώδικα.
+Node.js + npm για να στήσεις και να τρέχεις τον server.
+MongoDB για τη βάση και Compass αν θες γραφικό περιβάλλον.
+
+Με το VS Code φτιάχνω τοβ σκελετό
+Πάω στον φάκελο server και εκτελώ
+npm init -y
+Αυτό δημιουργεί το package.json
+
+Εγκατάστησε τα βασικά πακέτα:
+npm install express mongoose dotenv cors
+Προαιρετικά για development:
+npm install --save-dev nodemon
+
+Δημιούργησε τα αρχεία με VS Code
+src/app.js
+src/config/db.js
+src/models/Course.js
+src/routes/courses.routes.js
+src/controllers/courses.controller.js
+src/middleware/errorHandler.js
+src/middleware/validateRequest.js
+.env.example
+README-server.md
+
+Στο .env (το πραγματικό, όχι το .env.example) γράφεις π.χ.:
+MONGODB_URI=mongodb://localhost:27017/elearn_db
+PORT=4000
+
+Από VS Code terminal τρέχεις:
+npm run dev
+ή
+node src/app.js
+και ο server σου θα συνδεθεί στη Mongo.
+
+Αν θέλεις να βλέπεις τα δεδομένα σου σε GUI, ανοίγεις MongoDB Compass (εργαλείο της Mongo), συνδέεσαι στο mongodb://localhost:27017 και βλέπεις τη βάση elearn_db, collection courses, κ.λπ.
+
+Βάζουμε τα μαθήματα στην Mongo εκτελώντας το MongoDB Compass (αρχείο courses.json)
+
+
+
+
+
+
+για τον client
+
+δημιουργία νέου angular client (standalone)
+npm create @angular@latest client -- --standalone --routing --style=css
+
+Στις ερωτήσεις του installer:
+Which stylesheet format? → CSS
+Enable SSR? → No
+Αν σε ρωτήσει για experimental stuff → No
+
+Μετά:
+
+cd client
+npm install
+npm start
