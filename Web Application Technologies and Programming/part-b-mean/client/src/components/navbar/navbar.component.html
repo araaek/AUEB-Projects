@@ -1,0 +1,47 @@
+<header class="site-header">
+  <div class="header-decoration">
+    <img src="assets/img/header-decor.png" alt="" />
+  </div>
+
+  <div class="container header-inner">
+    <a routerLink="/" class="logo">
+      <img src="assets/img/logo.jpg" alt="CS4All Academy" class="logo-img" />
+      <span class="logo-text">CS4All Academy</span>
+    </a>
+
+    <button class="nav-toggle" [attr.aria-expanded]="isMenuOpen" (click)="toggleMenu()">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="sr-only">Άνοιγμα μενού</span>
+    </button>
+
+    <nav [class.is-open]="isMenuOpen" class="site-nav">
+      <ul class="nav-list">
+        <li>
+          <a routerLink="/" class="nav-cta" (click)="closeMenu()">Αρχική</a>
+        </li>
+        <li>
+          <a routerLink="/courses" class="nav-cta" (click)="closeMenu()">
+            Μαθήματα
+          </a>
+        </li>
+        <li>
+          <a routerLink="/books" class="nav-cta" (click)="closeMenu()">
+            Βιβλία
+          </a>
+        </li>
+        <li>
+          <a routerLink="/about" class="nav-cta" (click)="closeMenu()">
+            Ποιοι είμαστε
+          </a>
+        </li>
+        <li>
+          <a routerLink="/register" class="nav-cta" (click)="closeMenu()">
+            Εγγραφή
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

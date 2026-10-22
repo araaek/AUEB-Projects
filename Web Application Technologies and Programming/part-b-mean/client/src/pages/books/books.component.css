@@ -1,0 +1,16 @@
+.books-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.books-section h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.books-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.books-list li {
+  margin-bottom: 0.3rem;
+}

@@ -1,0 +1,32 @@
+<section class="section">
+  <div class="container">
+    <h1>Βιβλία</h1>
+    <p>Συγκεντρωτικός κατάλογος βιβλίων από όλα τα μαθήματα.</p>
+
+    <div *ngIf="loading" class="loading">
+      Φόρτωση βιβλίων...
+    </div>
+
+    <div *ngIf="!loading && error" class="error">
+      {{ error }}
+    </div>
+
+    <div *ngIf="!loading && !error">
+      <section class="books-section" *ngFor="let group of groupedBooks">
+        <h2>{{ group.courseTitle }}</h2>
+        <ul class="books-list">
+          <li *ngFor="let b of group.books">
+            <ng-container *ngIf="b.url; else noUrl">
+              <a [href]="b.url" target="_blank" rel="noopener">
+                {{ b.title || b.name }}
+              </a>
+            </ng-container>
+            <ng-template #noUrl>
+              {{ b.title || b.name }}
+            </ng-template>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,214 @@
+<section class="section">
+  <div class="container">
+    <h1>Φόρμα εγγραφής</h1>
+    <p>Συμπλήρωσε τα στοιχεία σου για να αποκτήσεις πρόσβαση στα μαθήματα.</p>
+
+    <!-- MODE: FORM -->
+    <form *ngIf="mode === 'form'" #regForm="ngForm" novalidate class="register-form">
+
+      <!-- Προσωπικά στοιχεία -->
+      <fieldset>
+        <legend>Προσωπικά στοιχεία</legend>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="first-name">Όνομα *</label>
+            <input type="text" id="first-name" name="firstName" [(ngModel)]="formData.firstName" required />
+            <span class="field-error" *ngIf="regForm.controls['firstName']?.invalid
+             && regForm.controls['firstName']?.touched">
+              Συμπλήρωσε το όνομά σου.
+            </span>
+          </div>
+
+          <div class="form-field">
+            <label for="last-name">Επώνυμο *</label>
+            <input type="text" id="last-name" name="lastName" [(ngModel)]="formData.lastName" required />
+            <span class="field-error" *ngIf="regForm.controls['lastName']?.invalid
+             && regForm.controls['lastName']?.touched">
+              Συμπλήρωσε το επώνυμό σου.
+            </span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required email />
+            <span class="field-error" *ngIf="regForm.controls['email']?.invalid
+             && regForm.controls['email']?.touched">
+              Συμπλήρωσε έγκυρο email.
+            </span>
+
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Στοιχεία πρόσβασης -->
+      <fieldset>
+        <legend>Στοιχεία πρόσβασης</legend>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="password">Κωδικός πρόσβασης *</label>
+            <input type="password" id="password" name="password" [(ngModel)]="formData.password" required
+              minlength="8" />
+            <span class="field-hint">Τουλάχιστον 8 χαρακτήρες.</span>
+            <span class="field-error" *ngIf="regForm.controls['password']?.invalid
+             && regForm.controls['password']?.touched">
+              Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες.
+            </span>
+
+          </div>
+
+          <div class="form-field">
+            <label for="password-confirm">Επιβεβαίωση κωδικού *</label>
+            <input type="password" id="password-confirm" name="passwordConfirm" [(ngModel)]="formData.passwordConfirm"
+              required />
+            <span class="field-error" *ngIf="regForm.controls['passwordConfirm']?.touched
+             && regForm.controls['passwordConfirm']?.errors?.['mismatch']">
+              Οι κωδικοί δεν ταιριάζουν.
+            </span>
+
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Επίπεδο γνώσεων -->
+      <fieldset class="form-field">
+        <legend>Επίπεδο γνώσεων *</legend>
+        <label>
+          <input type="radio" name="level" value="beginner" [(ngModel)]="formData.level" required />
+          Αρχάριος
+        </label>
+        <label>
+          <input type="radio" name="level" value="intermediate" [(ngModel)]="formData.level" />
+          Μέσο
+        </label>
+        <label>
+          <input type="radio" name="level" value="advanced" [(ngModel)]="formData.level" />
+          Προχωρημένο
+        </label>
+        <p class="field-error" *ngIf="regForm.controls['level']?.invalid
+          && regForm.controls['level']?.touched">
+          Επίλεξε επίπεδο γνώσεων.
+        </p>
+
+      </fieldset>
+
+      <!-- Προτιμήσεις -->
+      <fieldset>
+        <legend>Προτιμήσεις</legend>
+
+        <div class="form-row">
+          <div class="form-field">
+            <span>Κατηγορίες</span>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" (change)="onCategoryChange($event, 'programming')" />
+                Προγραμματισμός
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCategoryChange($event, 'networks')" />
+                Δίκτυα
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCategoryChange($event, 'security')" />
+                Ασφάλεια
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCategoryChange($event, 'data')" />
+                Δεδομένα
+              </label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <span>Επιθυμητά μαθήματα</span>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'java')" />
+                Προγραμματισμός με Java
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'python-intro')" />
+                Εισαγωγή στον Προγραμματισμό με Python
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'cpp')" />
+                Προγραμματισμός Υπολογιστών με C++
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'computer-networks')" />
+                Δίκτυα Υπολογιστών
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'communication-networks')" />
+                Δίκτυα Επικοινωνιών
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'network-security')" />
+                Ασφάλεια Δικτύων
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'cyber-security')" />
+                Κυβερνοασφάλεια
+              </label>
+              <label>
+                <input type="checkbox" (change)="onCourseChange($event, 'databases')" />
+                Βάσεις Δεδομένων
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="button" class="btn" (click)="showPreview(regForm)">
+          Προεπισκόπηση στοιχείων
+        </button>
+      </div>
+    </form>
+
+    <!-- MODE: PREVIEW -->
+    <section *ngIf="mode === 'preview'" class="register-summary">
+      <h2>Προεπισκόπηση στοιχείων</h2>
+
+      <p><strong>Όνομα:</strong> {{ formData.firstName }} {{ formData.lastName }}</p>
+      <p><strong>Email:</strong> {{ formData.email }}</p>
+      <p>
+        <strong>Επίπεδο γνώσεων:</strong>
+        {{ formData.level === 'beginner' ? 'Αρχάριος'
+        : formData.level === 'intermediate' ? 'Μέσο'
+        : 'Προχωρημένο' }}
+      </p>
+      <p *ngIf="formData.categories.length">
+        <strong>Κατηγορίες ενδιαφέροντος:</strong>
+        {{ getCategoryNames().join(', ') }}
+      </p>
+      <p *ngIf="formData.courses.length">
+        <strong>Επιθυμητά μαθήματα:</strong>
+        {{ getCourseNames().join(', ') }}
+      </p>
+
+      <div *ngIf="submitError" class="error">
+        {{ submitError }}
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="backToForm()">
+          Επιστροφή στη φόρμα
+        </button>
+        <button type="button" class="btn" (click)="submitRegistration()" [disabled]="submitting">
+          {{ submitting ? 'Υποβολή...' : 'Υποβολή' }}
+        </button>
+      </div>
+    </section>
+
+    <!-- MODE: DONE -->
+    <section *ngIf="mode === 'done'" class="register-summary">
+      <h2>Η εγγραφή ολοκληρώθηκε</h2>
+      <p>Ευχαριστούμε για την εγγραφή σου στην πλατφόρμα CS4All Academy.</p>
+      <p>Θα μεταφερθείς αυτόματα στην αρχική σελίδα σε λίγα δευτερόλεπτα.</p>
+    </section>
+  </div>
+</section>
