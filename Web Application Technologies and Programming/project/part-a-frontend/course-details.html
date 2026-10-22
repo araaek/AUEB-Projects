@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Μάθημα | CS4All Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body class="page-course-details">
+  <header class="site-header">
+    <div class="header-decoration"></div>
+
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.jpg" alt="CS4All Academy" class="logo-img" />
+        <span class="logo-text">CS4All Academy</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Άνοιγμα μενού</span>
+      </button>
+
+      <nav id="main-nav" class="site-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-cta"> Αρχική</a></li>
+          <li><a href="courses.html" class="nav-cta"> Μαθήματα</a></li>
+          <li><a href="books.html" class="nav-cta"> Βιβλία</a></li>
+          <li><a href="about.html" class="nav-cta"> Ποιοι είμαστε</a></li>
+          <li><a href="register.html" class="nav-cta"> Εγγραφή</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <div id="course-details" class="course-layout">
+          <!-- Θα γεμίσει με JS -->
+          <div class="course-main">
+            <h1 id="course-title">Τίτλος μαθήματος</h1>
+            <p id="course-meta" class="card-meta">Κατηγορία · Επίπεδο</p>
+
+            <section id="course-image-section">
+              <img id="course-image" src="" alt="" class="card-thumb" />
+            </section>
+
+            <section>
+              <h2>Περιγραφή μαθήματος</h2>
+              <p id="course-description">
+                Η περιγραφή του μαθήματος θα φορτωθεί δυναμικά.
+              </p>
+            </section>
+
+            <section id="course-books-section" hidden>
+              <h2>Βιβλία</h2>
+              <ul id="course-books" class="books-list"></ul>
+            </section>
+
+            <section id="course-videos-section" hidden>
+              <h2>Video</h2>
+              <ul id="course-videos" class="videos-list"></ul>
+            </section>
+          </div>
+
+          <aside class="course-sidebar">
+            <!-- <div class="card course-image-card">
+              <img id="course-image" src="" alt="" class="card-thumb" />
+            </div>
+          -->
+            <div class="card">
+              <h3>Εγγραφή στο μάθημα</h3>
+              <p>Συμπλήρωσε τη φόρμα εγγραφής και επίλεξε αυτό το μάθημα στις προτιμήσεις σου.</p>
+              <a href="register.html" class="btn btn-sm">Πήγαινε στην εγγραφή</a>
+            </div>
+          </aside>
+        </div>
+
+        <p id="course-not-found" class="alert" hidden>
+          Δεν βρέθηκε το συγκεκριμένο μάθημα.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© CS4All Academy</p>
+      <p>Πλατφόρμα e-learning για μαθήματα Πληροφορικής.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data/books.js"></script>
+  <script src="assets/js/data/videos.js"></script>
+  <script src="assets/js/data/courses.js"></script>
+  <script src="assets/js/ui/menu.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

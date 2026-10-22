@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Βιβλία | CS4All Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body class="page-books">
+  <header class="site-header">
+    <div class="header-decoration"></div>
+
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.jpg" alt="CS4All Academy" class="logo-img" />
+        <span class="logo-text">CS4All Academy</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Άνοιγμα μενού</span>
+      </button>
+
+      <nav id="main-nav" class="site-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-cta">Αρχική</a></li>
+          <li><a href="courses.html" class="nav-cta">Μαθήματα</a></li>
+          <li><a href="books.html" class="nav-cta">Βιβλία</a></li>
+          <li><a href="about.html" class="nav-cta">Ποιοι είμαστε</a></li>
+          <li><a href="register.html" class="nav-cta">Εγγραφή</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Βιβλία</h1>
+        <p>Συγκεντρωτικός κατάλογος βιβλίων από όλα τα μαθήματα.</p>
+
+        <div id="books-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© CS4All Academy</p>
+      <p>Πλατφόρμα e-learning για μαθήματα Πληροφορικής.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data/books.js"></script>
+  <!-- <script src="assets/js/data/videos.js"></script> -->
+  <script src="assets/js/data/courses.js"></script>
+  <script src="assets/js/ui/menu.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
