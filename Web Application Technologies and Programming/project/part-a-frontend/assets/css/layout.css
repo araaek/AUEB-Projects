@@ -1,0 +1,220 @@
+.site-header {
+  position: relative;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) 0;
+}
+
+/* logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.logo-text {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+
+/* ---- HEADER DECORATION ---- */
+
+
+
+
+.header-decoration {
+  height: 100px;
+
+  background-image:
+    url("../img/header-decor.png"),
+    linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+/* mobile nav */
+.site-nav {
+  display: none;
+  /* θα το ανοίγουμε με JS στο mobile */
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.nav-cta {
+  font-weight: 600;
+}
+
+/* burger button */
+.nav-toggle {
+  background: none;
+  border: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.nav-toggle-bar {
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-primary-dark);
+}
+
+/* helper για προσβάσιμο κρυφό κείμενο */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* όταν είναι ανοιχτό το μενού στο mobile (η κλάση θα μπαίνει με JS) */
+.site-nav.is-open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-md);
+}
+
+/* ---- BANNER ---- */
+
+.banner {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(to bottom,
+      #e8f5e9,
+      var(--color-bg));
+}
+
+.banner-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.banner-text h1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.banner-text p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* ---- SECTIONS ---- */
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+/*
+.section-alt {
+  background-color: var(--color-surface);
+}
+*/
+
+/* grids για mobile = 1 στήλη */
+.grid-categories,
+.grid-courses {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* ---- FOOTER ---- */
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-md) 0;
+  background-color: var(--color-surface);
+}
+
+.footer-inner {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ---- TABLET ≥ 600px ---- */
+@media (min-width: 600px) {
+
+  /* nav σε γραμμή, κλασικό menu */
+  .site-nav {
+    display: block;
+    position: static;
+    padding: 0;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  /* banner: 2 στήλες */
+  .banner-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .banner-text,
+  .banner-media {
+    flex: 1;
+  }
+
+  /* grids: 2 στήλες */
+  .grid-categories,
+  .grid-courses {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grid-categories>.card,
+  .grid-courses>.card {
+    flex: 1 1 calc(50% - var(--spacing-md));
+  }
+}
+
+/* ---- DESKTOP ≥ 900px ---- */
+@media (min-width: 900px) {
+
+  /* grids: 3 στήλες (όπου χωράει) */
+  .grid-categories>.card,
+  .grid-courses>.card {
+    flex: 1 1 calc(33.333% - var(--spacing-md));
+  }
+}
