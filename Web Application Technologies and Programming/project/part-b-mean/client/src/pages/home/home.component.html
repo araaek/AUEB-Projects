@@ -1,0 +1,67 @@
+<div class="container">
+  <main>
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner-inner">
+        <div class="banner-text">
+          <h1>Μάθε Πληροφορική με το CS4All Academy</h1>
+          <p>
+            Μαθήματα Προγραμματισμού, Δικτύων, Ασφάλειας και Βάσεων Δεδομένων
+            σε ένα ενιαίο περιβάλλον e-learning.
+          </p>
+          <a routerLink="/courses" class="btn">Δες όλα τα μαθήματα</a>
+        </div>
+        <div class="banner-media">
+          <img src="assets/img/banner.png" alt="CS4All Academy Banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ΚΑΤΗΓΟΡΙΕΣ -->
+    <section class="section">
+      <h2>Κατηγορίες μαθημάτων</h2>
+      <div class="grid-categories">
+        <article class="card category-card">
+          <h3>Προγραμματισμός</h3>
+          <p>Java, Python, C++ και άλλα.</p>
+          <a routerLink="/courses" [queryParams]="{category: 'programming'}" class="btn btn-sm">Περισσότερα</a>
+        </article>
+        <article class="card category-card">
+          <h3>Δίκτυα</h3>
+          <p>Από βασικές έννοιες μέχρι προχωρημένα πρωτόκολλα.</p>
+          <a routerLink="/courses" [queryParams]="{category: 'networks'}" class="btn btn-sm">Περισσότερα</a>
+        </article>
+        <article class="card category-card">
+          <h3>Ασφάλεια</h3>
+          <p>Ασφάλεια δικτύων και κυβερνοασφάλεια.</p>
+          <a routerLink="/courses" [queryParams]="{category: 'security'}" class="btn btn-sm">Περισσότερα</a>
+        </article>
+        <article class="card category-card">
+          <h3>Δεδομένα</h3>
+          <p>Βάσεις δεδομένων και διαχείριση δεδομένων.</p>
+          <a routerLink="/courses" [queryParams]="{category: 'data'}" class="btn btn-sm">Περισσότερα</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ΠΡΟΤΕΙΝΟΜΕΝΑ ΜΑΘΗΜΑΤΑ -->
+    <section class="section">
+      <h2>Προτεινόμενα μαθήματα</h2>
+      <div class="grid-courses">
+        <article class="card course-card">
+          <h3 class="card-title">Προγραμματισμός με Java</h3>
+          <p class="card-meta">Κατηγορία: Προγραμματισμός · Επίπεδο: Προχωρημένο</p>
+          <p>Μάθε αντικειμενοστρεφή προγραμματισμό με Java.</p>
+          <a routerLink="/courses" class="btn btn-sm">Περισσότερα</a>
+        </article>
+
+        <article class="card course-card">
+          <h3 class="card-title">Εισαγωγή στην Python</h3>
+          <p class="card-meta">Κατηγορία: Προγραμματισμός · Επίπεδο: Μέσο</p>
+          <p>Ιδανικό μάθημα για τα πρώτα σου βήματα.</p>
+          <a routerLink="/courses" class="btn btn-sm">Περισσότερα</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>

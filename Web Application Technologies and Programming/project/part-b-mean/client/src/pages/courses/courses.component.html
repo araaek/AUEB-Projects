@@ -1,0 +1,72 @@
+<section class="section">
+  <div class="container">
+    <h1>Μαθήματα</h1>
+    <p>Δες όλα τα διαθέσιμα μαθήματα της πλατφόρμας.</p>
+
+    <!-- Filters -->
+    <form class="filters-form">
+      <div class="filters-row">
+        <!-- Κατηγορία -->
+        <div class="filter-item">
+          <label for="filter-category">Κατηγορία</label>
+          <select id="filter-category" [(ngModel)]="selectedCategory" name="category" (ngModelChange)="applyFilters()">
+            <option value="">Όλες</option>
+            <option value="programming">Προγραμματισμός</option>
+            <option value="networks">Δίκτυα</option>
+            <option value="security">Ασφάλεια</option>
+            <option value="data">Δεδομένα</option>
+          </select>
+        </div>
+
+        <!-- Επίπεδο -->
+        <div class="filter-item">
+          <label for="filter-level">Επίπεδο</label>
+          <select id="filter-level" [(ngModel)]="selectedLevel" name="level" (ngModelChange)="applyFilters()">
+            <option value="">Όλα</option>
+            <option value="basic">Βασικό</option>
+            <option value="intermediate">Μέσο</option>
+            <option value="advanced">Προχωρημένο</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <!-- Loading -->
+    <div *ngIf="loading" class="loading">
+      Φόρτωση μαθημάτων...
+    </div>
+
+    <!-- Error -->
+    <div *ngIf="!loading && error" class="error">
+      {{ error }}
+      <button (click)="loadCourses()" class="retry-btn">Δοκίμασε ξανά</button>
+    </div>
+
+    <!-- Grid με φιλτραρισμένα μαθήματα -->
+    <div class="grid-courses" *ngIf="!loading && !error && filteredCourses.length > 0">
+      <article *ngFor="let course of filteredCourses; trackBy: trackByFn" class="card course-card">
+        <img [src]="course.image || '/assets/img/default-course.jpg'" [alt]="course.title" class="card-thumb" />
+        <h3 class="card-title">{{ course.title }}</h3>
+
+        <p class="card-meta">
+          Κατηγορία: {{ getCategoryName(course.category) }} ·
+          Επίπεδο: {{ getLevelName(course.level) }}
+        </p>
+
+        <p>{{ course.shortDescription }}</p>
+
+        <a [routerLink]="['/courses', course.slug || course._id]" class="btn btn-sm">
+          Περισσότερα
+        </a>
+      </article>
+    </div>
+
+    <!-- No results -->
+    <div *ngIf="!loading && !error && filteredCourses.length === 0" class="no-courses">
+      Δεν βρέθηκαν μαθήματα με τα επιλεγμένα φίλτρα
+
+    </div>
+
+
+  </div>
+</section>

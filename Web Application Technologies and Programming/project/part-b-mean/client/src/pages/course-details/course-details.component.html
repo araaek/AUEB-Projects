@@ -1,0 +1,85 @@
+<section class="section">
+  <div class="container page-course-details">
+
+    <a routerLink="/courses" class="btn btn-sm" style="margin-bottom: 1rem;">
+      ← Πίσω στα μαθήματα
+    </a>
+
+    <!-- Loading -->
+    <p *ngIf="loading" class="loading">
+      Φόρτωση στοιχείων μαθήματος...
+    </p>
+
+    <!-- Error -->
+    <div *ngIf="!loading && error" class="error">
+      {{ error }}
+    </div>
+
+    <!-- Περιεχόμενο μαθήματος -->
+    <div *ngIf="!loading && !error && course" class="course-layout">
+
+      <div class="course-main">
+        <!-- Τίτλος -->
+        <h1>{{ course.title }}</h1>
+
+        <!-- Κατηγορία / Επίπεδο -->
+        <p class="card-meta">
+          Κατηγορία: {{ course.categoryLabel || course.category }} ·
+          Επίπεδο: {{ course.levelLabel || course.level }}
+        </p>
+
+        <!-- Εικόνα -->
+        <section *ngIf="course.image" class="course-image-section">
+          <img [src]="course.image" [alt]="course.title" class="card-thumb" />
+        </section>
+
+        <!-- Περιγραφή -->
+        <section class="course-section">
+          <h2>Περιγραφή μαθήματος</h2>
+          <p>{{ course.description || course.shortDescription }}</p>
+        </section>
+
+        <!-- Βιβλία -->
+        <section class="course-section" *ngIf="course.books?.length">
+          <h2>Βιβλία</h2>
+          <ul class="books-list">
+            <li *ngFor="let b of course.books">
+              <ng-container *ngIf="b.url; else noBookUrl">
+                <a [href]="b.url" target="_blank" rel="noopener">
+                  {{ b.title || b.name }}
+                </a>
+              </ng-container>
+              <ng-template #noBookUrl>
+                {{ b.title || b.name }}
+              </ng-template>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Videos -->
+        <section class="course-section" *ngIf="course.videos?.length">
+          <h2>Video</h2>
+          <ul class="videos-list">
+            <li *ngFor="let v of course.videos">
+              <a [href]="v.url" target="_blank" rel="noopener">
+                {{ v.title || v.name }}
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Sidebar εγγραφής -->
+      <aside class="course-sidebar">
+        <div class="card">
+          <h3>Εγγραφή στο μάθημα</h3>
+          <p>Συμπλήρωσε τη φόρμα εγγραφής και επίλεξε αυτό το μάθημα στις προτιμήσεις σου.</p>
+          <a routerLink="/register" class="btn btn-sm">
+            Πήγαινε στην εγγραφή
+          </a>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</section>

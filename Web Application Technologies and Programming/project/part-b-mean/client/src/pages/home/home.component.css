@@ -1,0 +1,19 @@
+
+.category-card {
+  text-align: left;
+}
+
+.category-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.banner-text,
+  .banner-media {
+    flex: 1;
+  }
+
+  .banner-media img {
+  width: 300px;      
+  height: auto;      
+  display: block;
+}
