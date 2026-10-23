@@ -1,8 +1,0 @@
-Missile(M1)
-Owns(Nono, M1)
-Enemy(Nono, America)
-American(West)
-Missile(x) => Weapon(x)
-Missile(x) AND Owns(Nono,x) => Sells(West,x,Nono)
-Enemy(x,America) => Hostile(x)
-American(x) AND Weapon(y) AND Sells(x,y,z) AND Hostile(z) => Criminal(x)

@@ -1,2 +1,0 @@
-Father(John, Mary)
-Father(x, y) => Parent(x, y)
