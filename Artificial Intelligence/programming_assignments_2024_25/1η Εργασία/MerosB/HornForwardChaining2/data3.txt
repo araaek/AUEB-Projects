@@ -1,0 +1,6 @@
+Dictator(x) AND Human(y) => Owns(x,y)
+Dictator(Peter)
+Dictator(Jenny)
+Human(John)
+Human(Helen)
+Human(Paris)

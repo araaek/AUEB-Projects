@@ -1,0 +1,4 @@
+Loves(x,FatherOf(x))
+Hates(x,John)
+Loves(x,y) AND Hates(y,x) => Sad(x)
+Loves(x,MotherOf(x))

@@ -1,0 +1,7 @@
+Cat(x) => Animal(x)
+Animal(x) AND Human(y) AND Owns(y,x) => Pet(x)
+Cat(Psita)
+Cat(Zeta)
+Cat(Miou)
+Human(John)
+Owns(John,x)

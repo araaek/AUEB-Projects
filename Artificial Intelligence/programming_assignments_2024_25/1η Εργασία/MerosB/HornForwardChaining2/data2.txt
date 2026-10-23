@@ -1,0 +1,3 @@
+Human(x) => Human(FatherOf(x))
+Human(FatherOf(x)) => Human(x)
+Human(Peter)
