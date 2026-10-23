@@ -1,5 +1,4 @@
-// EFSTATHIOS KOUTSONIKOLAS
-// 3220093
+
 
 // JUnit5
 import org.junit.jupiter.api.Test;
