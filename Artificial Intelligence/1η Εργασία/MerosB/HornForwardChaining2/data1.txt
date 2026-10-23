@@ -1,0 +1,4 @@
+IsHuman(x) => Mortal(x)
+Mortal(x) => Loves(John, x)
+IsHumal(Mary)
+IsHuman(Anna)

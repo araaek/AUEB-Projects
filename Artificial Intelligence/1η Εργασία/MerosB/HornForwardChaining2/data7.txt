@@ -1,0 +1,5 @@
+Likes(Mary,John)
+OrCut(John,George,Nick)
+Likes(y,x) => NotCut(x,z)
+OrCut(x,y,z) AND NotCut(y, z) => Cut(x, z)
+OrCut(x, y, z) AND NotCut(x, z) => Cut(y, z)
