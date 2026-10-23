@@ -1,0 +1,138 @@
+﻿music,os,gender,height,weight,shoe,month,color,pet,number,prob,math
+metal,Windows,M,1.94,130,48,feb,green,dog,5,5,6
+laika,Windows,M,1.88,84,45,oct,green,cat,26,9,7.5
+laika,Windows,M,1.83,90,45,nov,black,none,13,0,5.5
+electronic,Windows,M,1.81,74,42,sep,white,dog,77,10,7.5
+hip hop,Windows,F,1.68,52,39,mar,red,dog,2,6.5,7.5
+rock,Windows,M,1.75,80,43,sep,purple,dog,95,,
+hip hop,Windows,M,1.8,70,44,oct,black,cat,42,6,9
+pop,Windows,M,1.79,75,44,jul,yellow,dog,3,5,7
+pop,Windows,F,1.7,56,37,nov,purple,dog,24,7,7.5
+rock,Windows,F,1.6,85,38,jan,red,dogcat,25,4,5
+electronic,Linux/unix,M,1.76,65,43,mar,blue,cat,23,7.5,
+electronic,Windows,M,1.75,76,43,jul,cyan,cat,67,8.5,8
+hip hop,Windows,F,1.8,60,42,jan,purple,dog,88,7.5,8.5
+hip hop,Windows,M,1.73,60,41,mar,purple,dog,20,5.5,
+pop,Windows,F,1.68,55,38,apr,blue,dog,44,8.5,7
+metal,Windows,M,1.75,67,42,feb,white,cat,23,0,2
+hip hop,Windows,M,1.77,89,45,mar,cyan,turtle,37,6,5
+hip hop,MacOS,F,1.65,60,38,jan,red,cat,54,5,7
+hip hop,Windows,F,1.71,60,40,nov,green,dog,68,0,0
+pop,Windows,F,1.56,54,38,mar,purple,dog,54,6,6
+pop,Windows,M,1.82,90,43,jan,green,dog,37,10,9
+hip hop,Windows,F,1.72,70,40,may,red,dog,56,0,4
+hip hop,Windows,M,1.71,64,43,may,blue,cat,67,0,0
+hip hop,Windows,M,1.75,60,42,dec,black,cat,66,6.5,5.5
+rock,Windows,M,1.87,87,45,oct,green,dogcat,69,6.5,
+pop,Windows,F,1.73,63,40.5,may,black,dog,77,6.5,5.5
+rock,Windows,M,1.75,80,43,sep,purple,dog,95,,
+hip hop,Windows,M,1.83,70,43,may,black,cat,13,6.5,7
+laika,Windows,F,1.57,60,38,feb,red,dog,19,5,6.5
+hip hop,Windows,M,1.81,73,44,jun,red,cat,17,6,7
+rock,Windows,F,1.67,53,37,nov,black,dog,55,3,6
+classical,Windows,M,1.72,66,41,sep,blue,cat,55,7,6.5
+pop,Windows,M,1.82,76,43,nov,blue,dog,13,6.5,7.5
+pop,MacOS,M,1.73,55,42,nov,green,cat,76,0,0
+pop,Windows,M,2,90,47,jun,orange,cat,21,2,2
+hip hop,MacOS,M,1.85,90,43,apr,black,cat,69,7.5,5
+hip hop,Windows,M,1.84,84,44,feb,blue,cat,99,8.5,8.5
+pop,Windows,F,1.78,80,42,mar,purple,dog,4,5,5
+metal,Windows,M,1.81,80,45,may,black,dog,33,9.5,7
+laika,Windows,M,1.73,,41,aug,orange,cat,34,6,5
+hip hop,Windows,M,1.68,80,42,dec,white,cat,54,7.5,6.5
+rock,Windows,M,1.78,95,43,jul,red,dog,85,,
+pop,Windows,F,1.58,64,39,nov,blue,cat,57,7,8
+pop,Windows,F,1.5,40,36,aug,black,cat,27,,
+laika,Windows,M,1.83,77,44,jun,blue,dog,44,3,5.5
+classical,Windows,M,1.78,65,44,oct,black,cat,100,,
+rock,Windows,M,1.85,140,46,apr,black,dog,1,6,7
+rock,Windows,F,1.7,61,39.5,sep,blue,dog,25,6,7.5
+electronic,Windows,M,1.75,63,42,may,purple,cat,55,7,5
+laika,MacOS,M,1.75,75,42,may,black,dog,72,6.5,5.5
+pop,Windows,F,1.75,70,41,may,green,dog,79,6.5,8.5
+pop,Windows,F,1.78,74,42,jan,blue,cat,18,6.5,6
+rock,Windows,M,1.8,80,44,feb,black,dog,50,7,6
+pop,Windows,F,1.73,62,39,feb,purple,cat,66,6,7
+hip hop,Windows,F,1.59,55,38,aug,black,guinea pig,73,6,9
+rock,Windows,M,1.8,108,47,feb,green,cat,55,0,5
+folk,Windows,F,1.63,60,39,feb,white,dog,50,5.5,5.5
+hip hop,Linux/unix,M,1.93,85,46,aug,black,cat,21,5,7
+hip hop,Windows,M,1.75,78,42.5,aug,purple,dog,56,9.5,8.5
+laika,Windows,F,1.58,58,38,sep,pink,cat,82,6.5,5
+hip hop,Windows,M,1.78,73,45,aug,yellow,dog,73,9,10
+laika,Windows,F,1.67,65,38,aug,black,dog,19,8,7
+electronic,Windows,M,1.75,84,42,mar,black,dog,97,8,10
+pop,Windows,M,1.8,75.3,44,jul,red,cat,97,8.5,11
+rock,Windows,M,1.76,61,42,jan,black,dog,4,,7
+metal,Windows,M,1.84,82.45,44.5,jul,green,none,13,10,10
+pop,Windows,F,1.65,60,38,sep,purple,dog,32,,
+rock,Windows,F,1.74,60,39,feb,black,dog,76,5,5
+laika,Windows,M,1.9,99,47,apr,black,dog,23,7.5,7
+hip hop,Windows,F,1.65,66,39,dec,purple,dog,8,6,
+laika,Windows,F,1.63,56,39,mar,blue,cat,88,,
+pop,Windows,F,1.71,61,42,mar,green,dog,68,6.5,5
+hip hop,Windows,M,1.82,78,44,dec,red,dog,8,6.5,8
+hip hop,Windows,F,1.68,58,37.5,jun,black,dog,77,10,10
+rock,Windows,M,1.78,61,44,nov,red,dog,12,8,10
+hip hop,Windows,F,1.74,78,41,jul,pink,dog,57,7,7
+classical,Windows,M,1.82,82,43,feb,blue,dog,9,6,6
+classical,Windows,M,1.8,70,44,jul,blue,dog,50,6,5.5
+pop,Linux/unix,F,1.6,58,39,oct,blue,dog,32,7.5,10
+none,Windows,M,1.8,68,44,may,green,dog,73,9.5,9
+rock,Windows,M,1.83,96,45,mar,blue,dog,67,8.5,10
+hip hop,Windows,M,1.85,90,45,oct,black,cat,5,7,10
+rock,Windows,F,1.7,78,40.5,oct,green,cat,95,,
+pop,Windows,F,1.66,90,40,jul,black,dog,33,2,1
+rock,Windows,F,1.62,50,38,oct,purple,cat,58,7.5,6.5
+electronic,Windows,M,1.75,69,42,oct,red,cat,6,,
+rock,Windows,M,1.75,70,45,nov,black,none,42,7,5.5
+hip hop,Windows,M,1.75,65,43,,red,dog,76,0,0
+laika,Windows,F,1.68,70,39,jan,purple,dog,32,6,5
+hip hop,Windows,M,1.69,70,42,feb,black,dog,77,6.5,6
+hip hop,Windows,M,1.73,62,42,jun,black,fish,74,7.5,7.5
+electronic,Windows,M,1.86,88,46,oct,blue,dog,35,5.5,6
+pop,Windows,F,1.6,60,37,sep,black,dog,55,7,6
+metal,Windows,M,1.77,66,46,sep,red,cat,69,5.5,5
+rock,Windows,M,1.82,95,45.5,apr,black,dog,81,,8
+hip hop,MacOS,M,1.93,95,49,may,red,dog,81,7.5,7
+hip hop,MacOS,M,1.77,71,42,nov,green,dog,72,6.5,
+hip hop,Windows,M,1.81,69,44.5,dec,black,dog,4,5,9
+Τζάζ,Windows,M,1.77,73,45,jun,blue,dog,63,8.5,8
+pop,Windows,F,1.7,68,40,jan,blue,dog,64,6.5,6
+metal,Windows,F,1.65,63,39.5,may,black,dog,99,7.5,6.5
+rock,Windows,M,1.9,85,46,mar,blue,dog,89,6.5,9
+hip hop,Windows,F,1.75,60,42,may,purple,dog,96,9,7
+hip hop,Windows,M,1.7,84,45,jul,green,dog,13,4,
+metal,Windows,M,1.73,70,44,sep,black,rabbit,34,7.5,8.5
+rock,Windows,M,1.76,77,44,jul,black,dog,21,5,5
+rock,Windows,M,1.93,103,46,may,blue,dog,69,5,6
+metal,Windows,M,1.74,69,44,dec,black,caracal,44,7,7
+pop,Windows,M,1.76,66,43,apr,white,cat,69,10,9
+hip hop,Windows,F,1.69,55,38,sep,purple,dog,17,7,8
+hip hop,Windows,M,1.8,85,46,dec,blue,rabbit,10,7.5,8.5
+hip hop,Windows,M,1.8,84,43,sep,black,cat,69,6,6
+electronic,MacOS,M,1.75,75,42,sep,black,dog,7,6,6
+pop,Windows,F,1.66,58,39,aug,purple,cat,56,0,2
+hip hop,Windows,M,1.66,54,41,jul,green,dog,69,0,0
+pop,Windows,F,1.59,54,36,dec,pink,dog,32,,
+hip hop,Windows,M,1.86,84,47,may,purple,none,69,5,8
+hip hop,Windows,F,1.64,60,38,may,purple,dog,7,,8
+electronic,Windows,F,1.65,70,40,dec,blue,dog,77,8,10
+pop,Windows,M,1.76,70,43,mar,black,cat,16,8.5,9
+pop,MacOS,F,1.74,56,39,may,black,dog,20,7.5,7.5
+laika,Windows,M,1.84,72,44,sep,blue,dog,19,10,10
+hip hop,Linux/unix,M,1.85,95,45,feb,blue,dog,68,5,6
+hip hop,Windows,M,1.85,85,46,oct,black,dog,69,5.5,8.5
+rock,Windows,M,1.82,60,44,jun,blue,cat,45,3,7
+electronic,Windows,M,1.85,80,45,feb,blue,cat,27,5,6
+rock,Windows,F,1.68,70,38,dec,orange,cat,55,,
+electronic,Windows,M,1.72,65,42,sep,purple,dog,85,,
+classical,Windows,F,1.6,45,38,oct,purple,cat,51,9.5,6.5
+pop,Windows,M,1.85,65,45,jul,blue,dog,22,5,5
+hip hop,Windows,M,1.63,80,42,jul,green,dog,36,6.5,5
+hip hop,Windows,M,1.87,72,45,apr,purple,dog,69,,8
+pop,Windows,M,1.95,100,47,may,green,dog,57,,8
+rock,Windows,M,1.67,72,41,apr,red,dog,87,5,5.5
+pop,Windows,F,1.7,65,39,jul,purple,cat,20,0,5
+laika,MacOS,F,1.7,57,39,nov,yellow,dog,59,5,6
+hip hop,MacOS,M,1.75,75,43,jan,black,dog,83,6.6,8
